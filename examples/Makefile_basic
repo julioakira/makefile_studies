@@ -1,0 +1,7 @@
+file_2: file_1
+	echo "This will run second, because it depends on the first rule"
+	touch file_2
+
+file_1:
+	echo "This will run first, because it has no dependencies and is required by the second rule"
+	touch file_1

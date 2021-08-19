@@ -1,0 +1,4 @@
+FILES = file1.o file2.o file3.o
+
+file1.o file2.o file3.o:
+	echo $@

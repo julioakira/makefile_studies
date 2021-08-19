@@ -1,0 +1,17 @@
+FILES = file_1 file_2
+OTHER_FILES = file_3 \
+              file_4 \
+              file_5 \
+
+some_file: $(FILES)
+	echo "Very files, much files, wow" $(FILES)
+	touch some_file
+
+file_1:
+	touch file_1
+
+file_2:
+	touch file_2
+
+clean:
+	rm -f file_1 file_2 some_file
